@@ -4,5 +4,5 @@
     - name: Hello Message
       debug:
         msg: "{{ item }}"
-      loop: "{{ survey_message_list.split(',') }}"
+      loop: "{{ survey_message_list }}"
 
