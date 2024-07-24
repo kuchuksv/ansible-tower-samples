@@ -3,5 +3,6 @@
   tasks:
     - name: Hello Message
       debug:
-        msg: "{{ survey_message }}"
+        msg: "{{ item }}"
+      loop: "{{ survey_message_list.split(',') }}"
 
